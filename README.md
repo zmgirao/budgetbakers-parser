@@ -5,7 +5,8 @@ Since the app from Budget Bakers does not have transaction export via Web app or
 
 Instructions:
 1) Save as HTML a list of transactions from Wallet app named bakers.html and:
-2) Run the Python script to get:
+2) Optional: removing Credit Card payments or amounts sent to savings by adding those accounts in line 86 of the script;
+3) Run the Python script to get:
 
 The output will be: 
 1) dump.json file with a list of the transactions in JSON object format;
