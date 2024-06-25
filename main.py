@@ -83,8 +83,7 @@ if sorted_transactions:
             toAdd = ''
             if transaction.get('category') == 'Transfer, withdraw':
                 continue
-            if float(transaction.get('price', 0)) > 0 and transaction.get('source', 'default') not in ['ActivoCredit',
-                                                                                                       'AforroNet']:
+            if float(transaction.get('price', 0)) > 0 and transaction.get('source', 'default') not in ['', '']:
                 if transaction.get('category') == 'Wage, invoices':
                     toAdd = f'Wages [{transaction.get('price')}] Income'
                     print(f'Wages [{transaction.get('price')}] Income')
